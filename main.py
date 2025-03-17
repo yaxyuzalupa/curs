@@ -32,9 +32,7 @@ def main():
     variant = input_int_in_range(start=1, end=4)
     
     A = np.empty((1,1))
-
     B = np.empty((1,1))
-
     C = np.empty((1,1))
 
 
