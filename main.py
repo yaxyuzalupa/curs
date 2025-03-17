@@ -32,7 +32,9 @@ def main():
     variant = input_int_in_range(start=1, end=4)
     
     A = np.empty((1,1))
+
     B = np.empty((1,1))
+
     C = np.empty((1,1))
 
 
@@ -99,6 +101,7 @@ def main():
         C = fill_matrix(C, (c_size,c_size), choic3)
 
     if variant == 4:
+      print("Вы вышли из программы")
       sys.exit(0)
 
 
