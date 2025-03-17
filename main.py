@@ -33,7 +33,7 @@ def main():
     
     A = np.empty((1,1))
     B = np.empty((1,1))
-    C = np.empty((2,115))
+    C = np.empty((1,1))
 
 
     if variant==1:
