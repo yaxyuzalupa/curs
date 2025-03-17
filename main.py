@@ -95,7 +95,7 @@ def main():
         C = np.empty((c_size,c_size))
         X = np.empty((a_size,c_size))
         print("Заполнить матрицу вручную(введите 1) или случайными(введите 2) числами")
-        choic3 = input_int_in_range(start=1, end=2, prompt='C')
+        choic3 = input_int_in_range(start=1, end=2, prompt=)
         C = fill_matrix(C, (c_size,c_size), choic3)
 
     if variant == 4:
