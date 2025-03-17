@@ -48,11 +48,11 @@ def main():
         X = np.empty((a_size,a_size))
         
         print("Выберите заполнить матрицу вручную(введите 1) или случайными числами(введите 2)")
-        choic1 = input_int_in_range(start=1, end=2, prompt='A')
+        choic1 = choice(prompt='A')
         A = fill_matrix(A, (a_size,a_size), choic1)
         
         print("Заполнить матрицу вручную(введите 1) или случайными(введите 2) числами")
-        choic2 = input_int_in_range(start=1, end=2, prompt='B')
+        choic2 = choice(prompt='B')
         B = fill_matrix(B, (b_rows,b_cols), choic2)
         
     if variant==2:
@@ -67,11 +67,11 @@ def main():
         X = np.empty((a_size,a_size))
         
         print("Выберите заполнить матрицу вручную(введите 1) или случайными числами(введите 2)")
-        choic1 = input_int_in_range(start=1, end=2, prompt='A')
+        choic1 = choice(prompt='A')
         A = fill_matrix(A, (a_size,a_size), choic1)
         
         print("Заполнить матрицу вручную(введите 1) или случайными(введите 2) числами")
-        choic2 = input_int_in_range(start=1, end=2, prompt='B')
+        choic2 = choice(prompt='B')
         B = fill_matrix(B, (b_rows,b_cols), choic2)
 
     if variant==3:
@@ -86,16 +86,20 @@ def main():
         c_size = input_int("Введите размерность матрицы C:\t")
 
         print("Выберите заполнить матрицу вручную(введите 1) или случайными числами(введите 2)")
-        choic1 = input_int_in_range(start=1, end=2, prompt='A')
+        choic1 = choice("A")
         A = fill_matrix(A, (a_size,a_size), choic1)
         
         print("Заполнить матрицу вручную(введите 1) или случайными(введите 2) числами")
-        choic2 = input_int_in_range(start=1, end=2, prompt='B')
+        choic2 = choice("B")
+
         B = fill_matrix(B, (b_rows,b_cols), choic2)
+
         C = np.empty((c_size,c_size))
+
         X = np.empty((a_size,c_size))
+
         print("Заполнить матрицу вручную(введите 1) или случайными(введите 2) числами")
-        choic3 = input_int_in_range(start=1, end=2, prompt=)
+        choic3 = choice("C")
         C = fill_matrix(C, (c_size,c_size), choic3)
 
     if variant == 4:
