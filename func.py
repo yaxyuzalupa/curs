@@ -20,13 +20,13 @@ def inversed_matrix(Matrix:np.array)->np.array:
         print("Матрица необратима, так как не является квадратной")
     
 
-def input_int_in_range(start:int, end:int, prompt:str)->int:
+def input_int_in_range(start:int, end:int)->int:
     """
     Ввод чисел с огр диапазоном 
     """
     while True:
         try:
-            inputr = int(input(f"Выберите, заполнить матрицу {prompt} вручную(введите 1) или случайными числами(введите 2)"))
+            inputr = int(input())
             if not(inputr<start or inputr>end):
                 return inputr
             else:
