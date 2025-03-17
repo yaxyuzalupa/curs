@@ -81,11 +81,13 @@ def choice(prompt:str)->int:
     
     while True:
         try:
-            
-            choic = int(input())
-            return choic
+            while True:
+                choic = int(input())
+                if 1<=choic<=2:
+                    return choic
+                else: print("Вы написали число больше 2 или меньше 1")
 
-        except ValueError:
+        except:
             print("Вы ввели не число. Попробуйте снова.")
 
 
